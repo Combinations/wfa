@@ -9,30 +9,18 @@
 
           <ion-item>
             <ion-label fixed>Latitude</ion-label>
-            <ion-input></ion-input>
+            <ion-input readonly = "true" [value]= "latitude" ></ion-input>
           </ion-item>
-
 
           <ion-item>
             <ion-label fixed>Longitude</ion-label>
-            <ion-input></ion-input>
+            <ion-input readonly = "true" [value]= "longitude" ></ion-input>
           </ion-item>
 
-          <ion-item>
-            <ion-label fixed>Radius</ion-label>
-            <ion-input></ion-input>
-          </ion-item>
 
           <ion-item>
             <ion-label>Date</ion-label>
-            <ion-select [(ngModel)]="year" cancelText="Cancel" okText="Confirm">
-              <ion-option value="2017" selected="true">2017</ion-option>
-              <ion-option value="2018">2018</ion-option>
-              <ion-option value="2019">2019</ion-option>
-            </ion-select>
-            <ion-select [(ngModel)]="month" cancelText="Cancel" okText="Confirm">
-              <ion-option value="june" selected="true">June</ion-option> 
-            </ion-select>
+            <ion-input readonly="true" [value] = "'July 15th, 2018'"> </ion-input>
           </ion-item>
 
   </ion-list> 
