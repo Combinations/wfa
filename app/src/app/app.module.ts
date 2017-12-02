@@ -23,6 +23,7 @@ import {
  Marker
  } from '@ionic-native/google-maps';
 import { HttpModule} from '@angular/http';
+import { Mixpanel } from '@ionic-native/mixpanel';
 
 
 @NgModule({
@@ -52,6 +53,7 @@ import { HttpModule} from '@angular/http';
     HTTP,
     Geolocation,
     GoogleMaps,
+    Mixpanel,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     TransportProvider
   ]

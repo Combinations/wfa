@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Headers, RequestOptions, Response, Http } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 import { Observable } from "rxjs/Rx";
+import { Mixpanel } from '@ionic-native/mixpanel';
 
 
 @Injectable()
@@ -10,8 +11,8 @@ export class TransportProvider {
   BASE_URL = "https://wfa-server.herokuapp.com/"
 
 
-  constructor(private http: Http) {
-
+  constructor(private http: Http, private mixpanel: Mixpanel) {
+    
   }
 
   get(endpoint: string) {
